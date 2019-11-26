@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "953650087453",
+    "firebase_url": "https://safarer-ffa80.firebaseio.com",
+    "project_id": "safarer-ffa80",
+    "storage_bucket": "safarer-ffa80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953650087453:android:1c3387740f8737085d68f4",
+        "android_client_info": {
+          "package_name": "com.example.safarer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953650087453-96qi5ogf022oul6d3n7mrgmifkar3al7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.safarer",
+            "certificate_hash": "2a65133b929c6a2e1616d5615d55953755ff37f4"
+          }
+        },
+        {
+          "client_id": "953650087453-i2rqj4a8o666bt2lg15ra5mq601ph833.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5gMrQPWfWcd-kJVZkheR1X9OJelFagDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953650087453-i2rqj4a8o666bt2lg15ra5mq601ph833.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
