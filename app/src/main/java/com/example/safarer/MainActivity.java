@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         
 
 
-        AddNewPostButton = (ImageButton) findViewById(R.id.add_new_post_button);
+        //AddNewPostButton = (ImageButton) findViewById(R.id.add_new_post_button);
         AddNewPostButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
