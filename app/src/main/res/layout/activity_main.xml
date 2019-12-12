@@ -8,8 +8,13 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_5">
+   >
+<include
+    android:id="@+id/main_page_toolbar"
+    layout="@layout/app_bar_layout"
+    >
 
+</include>
 
     <ImageButton
         android:id="@+id/add_new_post_button"
