@@ -6,83 +6,160 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/white">
+    android:background="@color/abs1">
 
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="150dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
         android:paddingTop="200dp"
         android:background="@drawable/pic" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="470dp"
-        android:src="@drawable/beach2"
-        />
-    <EditText
-        android:id="@+id/Name"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textSize="40dp"
-        android:layout_width="150dp"
-        android:layout_height="250dp"
-        android:layout_alignParentBottom="true"
-        android:lastBaselineToBottomHeight="210dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        />
-    <Button
-        android:id="@+id/button1"
-        android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:lastBaselineToBottomHeight="50dp"
-        android:background="@drawable/add"
-
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_centerInParent="true"
-        />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="470dp"
+            android:src="@drawable/beach2" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_below="@id/image"
+        android:id="@+id/Name"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:textSize="180dp"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:textColor="@drawable/gradient_5"
+        android:layout_centerInParent="true"
         />
     <Button
+        android:layout_below="@id/Name"
+        android:id="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_camera3_name"
+        android:layout_marginRight="@android:dimen/app_icon_size"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/about"
+        android:layout_below="@id/button1"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:text="about"
+        android:textColor="@color/colorAccent"
+        />
+
+    <Button
+        android:layout_below="@id/Name"
         android:id="@+id/button2"
         android:layout_toRightOf="@+id/button1"
-        android:layout_alignParentBottom="true"
-        android:lastBaselineToBottomHeight="50dp"
-        android:background="@drawable/ic_action_name"
-
+        android:background="@drawable/Edit"
+        android:layout_marginRight="@android:dimen/app_icon_size"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_centerInParent="true"
         />
+    <TextView
+        android:id="@+id/edit"
+        android:layout_below="@id/button2"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:text="edit"
+        android:textColor="@color/colorAccent"
+        />
+
     <Button
         android:id="@+id/button3"
+        android:layout_below="@id/Name"
         android:layout_toRightOf="@+id/button2"
-        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@android:dimen/app_icon_size"
         android:lastBaselineToBottomHeight="50dp"
-        android:background="@drawable/Edit"
+        android:background="@drawable/add"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/addtour"
+        android:layout_below="@id/button3"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:text="add tour"
+        android:textColor="@color/colorAccent"
         />
     <Button
         android:id="@+id/button4"
-        android:layout_toRightOf="@+id/button3"
+        android:layout_below="@id/Name"
+        android:layout_toRightOf="@id/button3"
         android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
         android:background="@drawable/ic_action2_name"
-        android:lastBaselineToBottomHeight="50dp"
         android:layout_width="55dp"
         android:layout_height="55dp"
         />
+    <TextView
+        android:id="@+id/more"
+        android:layout_below="@id/button4"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:text="more"
+        android:textColor="@color/colorAccent"
+        />
+    <Button
+        android:id="@+id/button5"
+        android:layout_below="@id/about"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_action_name"
+        android:layout_width="45dp"
+        android:layout_height="15sp"
+        />
+    <TextView
+        android:id="@+id/Livesin"
+        android:layout_below="@id/edit"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:text="Lives in"
+        android:textColor="@color/colorAccent"
 
+        />
+    <Button
+        android:id="@+id/button6"
+        android:layout_below="@id/about"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_camera4_name"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        />
+    <TextView
+        android:id="@+id/nav_find_partners"
+        android:layout_below="@id/more"
+        android:layout_toLeftOf="@+id/button6"
+        android:layout_alignParentBottom="true"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:text="partner"
+        android:textColor="@color/colorAccent"
+
+        />
 
 
 </RelativeLayout>
