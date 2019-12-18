@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<RelativeLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,6 +9,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
    >
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+
 <include
     android:id="@+id/main_page_toolbar"
     layout="@layout/app_bar_layout"
@@ -16,18 +25,36 @@
 
 </include>
 
-    <ImageButton
-        android:id="@+id/add_new_post_button"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_above="@+id/main_container"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/add"
-        android:scaleType="centerCrop"
-        android:layout_marginBottom="4dp"
-        android:layout_marginRight="12dp"
-        android:background="@color/colorPrimaryDark"
-        android:baselineAlignBottom="false"
-        android:focusableInTouchMode="false" />
+      <ImageButton
+          android:id="@+id/add_new_post_button"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_above="@+id/main_container"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginTop="-52dp"
+          android:layout_marginRight="12dp"
+          android:layout_marginBottom="4dp"
+          android:background="@color/colorPrimaryDark"
+          android:baselineAlignBottom="false"
+          android:focusableInTouchMode="false"
+          android:scaleType="centerCrop"
+          android:src="@drawable/add" />
 
-</RelativeLayout>
+      <FrameLayout
+          android:id="@+id/main_container"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/all_user_post_list"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+      </FrameLayout>
+  </RelativeLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -2,11 +2,10 @@ package com.example.safarer;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-//<<<<<<< Updated upstream
+
 import android.widget.ImageButton;
 //=======
 import android.widget.Button;
