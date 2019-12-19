@@ -7,9 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 
 import android.widget.ImageButton;
+
 //=======
 import android.widget.Button;
 //>>>>>>> Stashed changes
+
+
+import android.widget.Button;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         mToolbar = (Toolbar) findViewById(R.id.main_page_toolbar);
         setSupportActionBar(mToolbar);
@@ -49,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     private void SendUserToPostActivity()
 
     {
+
+
 
         Intent addNewPostIntent = new Intent(MainActivity.this, PostActivity.class);
         startActivity(addNewPostIntent);
